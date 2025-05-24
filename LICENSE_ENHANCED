@@ -1,0 +1,114 @@
+# FastVLM 增强版许可证
+
+## 项目组成说明
+
+本项目包含以下组件，各自适用不同的许可证条款：
+
+### 1. Apple FastVLM 原始代码
+- **来源**: Apple Inc. FastVLM 开源项目
+- **许可证**: Apple Software License (见 LICENSE 文件)
+- **适用范围**: 所有基于原始 FastVLM 的代码和功能
+
+### 2. Apple FastVLM 模型
+- **来源**: Apple Inc. 预训练模型
+- **许可证**: Apple Machine Learning Research Model License (见 LICENSE_MODEL 文件)
+- **重要限制**: 
+  - 仅限研究用途 (Research Purposes Only)
+  - 禁止商业使用 (No Commercial Use)
+  - 必须保留原始许可证和归属声明
+
+### 3. 增强功能代码 (本项目新增)
+- **来源**: 个人二次开发
+- **许可证**: MIT License (见下文)
+- **适用范围**: 
+  - LiDAR 距离感知系统
+  - 图像相似度检测
+  - 智能语音合成
+  - 触觉反馈管理
+  - 其他新增功能
+
+---
+
+## 增强功能 MIT 许可证
+
+MIT License
+
+Copyright (c) 2025 FastVLM Enhanced Version Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 使用条款和限制
+
+### ✅ 允许的使用
+1. **学习和研究**: 用于个人学习、学术研究、技术探索
+2. **非商业开发**: 个人项目、开源贡献、技术演示
+3. **代码修改**: 修改增强功能代码，创建衍生作品
+4. **重新分发**: 在遵守所有许可证条款的前提下重新分发
+
+### 🚨 使用限制
+1. **商业使用限制**: 
+   - Apple 模型部分禁止任何商业使用
+   - 整个项目不得用于商业产品或服务
+2. **归属要求**: 
+   - 必须保留所有原始版权声明
+   - 必须包含完整的许可证文件
+   - 必须标明对原始项目的修改
+3. **商标限制**: 
+   - 不得使用 Apple 商标推广衍生产品
+   - 不得暗示与 Apple 的关联或背书
+
+### 📋 分发要求
+如果您重新分发此项目或其衍生作品，必须：
+
+1. **包含所有许可证文件**:
+   - LICENSE (Apple 代码许可证)
+   - LICENSE_MODEL (Apple 模型许可证)  
+   - LICENSE_ENHANCED (本许可证)
+
+2. **提供清晰的归属声明**:
+   ```
+   本项目基于 Apple Inc. 的 FastVLM 开源项目开发
+   Apple FastVLM 原始项目: https://github.com/apple/ml-fastvlm
+   增强功能由 [您的名称] 开发
+   ```
+
+3. **标明修改内容**:
+   - 清楚说明对原始项目的修改和增强
+   - 区分原始代码和新增代码
+   - 提供修改历史和说明
+
+### ⚠️ 免责声明
+1. **实验性质**: 本项目为个人实验性开发，不保证稳定性
+2. **使用风险**: 用户需自行承担使用风险
+3. **无担保**: 按"现状"提供，不提供任何明示或暗示的担保
+4. **责任限制**: 开发者不承担任何直接或间接损失责任
+
+### 🔍 许可证兼容性
+- ✅ 与 MIT License 兼容 (增强功能部分)
+- ⚠️ 受 Apple 许可证限制 (原始代码和模型)
+- 🚨 整体项目受最严格条款约束 (仅限研究用途)
+
+---
+
+## 联系信息
+如有许可证相关问题，请通过 GitHub Issues 联系。
+
+**最后更新**: 2025年5月

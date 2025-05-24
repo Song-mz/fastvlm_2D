@@ -8,7 +8,7 @@ set -e
 # Help function
 show_help() {
     local is_error=${1:-true}  # Default to error mode if no argument provided
-    
+
     echo "Usage: $0 --model <model_size> --dest <destination_directory>"
     echo
     echo "Required arguments:"
@@ -22,7 +22,7 @@ show_help() {
     echo
     echo "Options:"
     echo "  --help    Show help message"
-    
+
     # Exit with success (0) for help flag, error (1) for usage errors
     if [ "$is_error" = "false" ]; then
         exit 0
@@ -64,7 +64,7 @@ case "$model_size" in
         ;;
 esac
 
-cleanup() { 
+cleanup() {
     rm -rf "$tmp_dir"
 }
 
@@ -99,7 +99,7 @@ download_model() {
 
     # Download model
     echo -e "\nDownloading '${model}' model ...\n"
-    wget -q --progress=bar:noscroll --show-progress -O "$tmp_zip_file" "$base_url/$model.zip"
+    curl -L --progress-bar -o "$tmp_zip_file" "$base_url/$model.zip"
 
     # Unzip model
     echo -e "\nUnzipping model..."

@@ -9,9 +9,9 @@ import SwiftUI
 struct InfoView: View {
     @Environment(\.dismiss) var dismiss
 
-    let paragraph1 = "**FastVLM¹** is a new family of Vision-Language models that makes use of **FastViTHD**, a hierarchical hybrid vision encoder that produces small number of high quality tokens at low latencies, resulting in significantly faster time-to-first-token (TTFT)."
-    let paragraph2 = "This app showcases the **FastVLM** model in action, allowing users to freely customize the prompt. FastVLM utilizes Qwen2-Instruct LLMs without additional safety tuning, so please exercise caution when modifying the prompt."
-    let footer = "1. **FastVLM: Efficient Vision Encoding for Vision Language Models.** (CVPR 2025) Pavan Kumar Anasosalu Vasu, Fartash Faghri, Chun-Liang Li, Cem Koc, Nate True, Albert Antony, Gokul Santhanam, James Gabriel, Peter Grasch, Oncel Tuzel, Hadi Pouransari"
+    let paragraph1 = "**FastVLM¹** 是一个新型视觉语言模型系列，它使用 **FastViTHD**（一种分层混合视觉编码器）在低延迟下生成少量高质量的标记，从而显著缩短首字生成时间（TTFT）。"
+    let paragraph2 = "这款应用展示了 **FastVLM** 模型的实际应用，允许用户自由定制提示词。FastVLM 使用 Qwen2-Instruct 大语言模型，没有额外的安全调整，因此修改提示词时请谨慎操作。"
+    let footer = "1. **FastVLM: 视觉语言模型的高效视觉编码。** (CVPR 2025) Pavan Kumar Anasosalu Vasu, Fartash Faghri, Chun-Liang Li, Cem Koc, Nate True, Albert Antony, Gokul Santhanam, James Gabriel, Peter Grasch, Oncel Tuzel, Hadi Pouransari"
 
     var body: some View {
         NavigationStack {
@@ -32,7 +32,7 @@ struct InfoView: View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .textSelection(.enabled)
-            .navigationTitle("Information")
+            .navigationTitle("信息")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
@@ -51,7 +51,7 @@ struct InfoView: View {
                 }
                 #elseif os(macOS)
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Done") {
+                    Button("完成") {
                         dismiss()
                     }
                     .buttonStyle(.bordered)

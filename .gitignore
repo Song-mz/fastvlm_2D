@@ -136,6 +136,7 @@ dmypy.json
 
 # Xcode
 *.xcworkspace
+**/xcuserdata/
 
 # FastVLM models
 app/FastVLM/model

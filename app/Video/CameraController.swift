@@ -37,6 +37,9 @@ public class CameraController: NSObject {
     @objc dynamic private var rotationCoordinator : AVCaptureDevice.RotationCoordinator?
     private var rotationObservation: NSKeyValueObservation?
 
+    /// 摄像头是否正在运行
+    public private(set) var isRunning = false
+
     public func attach(continuation: AsyncStream<CMSampleBuffer>.Continuation) {
         sessionQueue.async {
             self.framesContinuation = continuation
@@ -53,8 +56,8 @@ public class CameraController: NSObject {
         sessionQueue.sync { [self] in
             captureSession?.stopRunning()
             captureSession = nil
+            isRunning = false
         }
-
     }
 
     public func start() {
@@ -65,6 +68,7 @@ public class CameraController: NSObject {
             self.checkPermission()
             self.setupCaptureSession(position: backCamera ? .back : .front)
             captureSession.startRunning()
+            isRunning = true
         }
     }
 
@@ -94,7 +98,7 @@ public class CameraController: NSObject {
                 }
             }
         }
-    
+
     private func updateRotation(rotation : CGFloat) {
         guard let captureSession else { return }
         for output in captureSession.outputs {
